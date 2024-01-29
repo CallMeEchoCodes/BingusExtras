@@ -1,0 +1,10 @@
+{
+  "type": "crafting_shapeless",
+  "ingredients": [
+    { "item": "bingusextras:ender_pearl_block" }
+  ],
+  "result": {
+    "item": "minecraft:ender_pearl",
+    "count": 9
+  }
+}

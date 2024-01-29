@@ -1,0 +1,35 @@
+{
+    "schemaVersion": 1,
+    "id": "bingusextras",
+    "version": "1.0.0",
+    "name": "BingusExtras",
+    "icon": "assets/bingusextras.png",
+    "description": "A mod that adds a bunch of random stuff. Made for Bingus' Love SMP.",
+    "authors": [
+        "CallMeEcho"
+    ],
+    "license": "MPL-2.0",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "dev.callmeecho.bingusextras.main.BingusExtrasMod"
+        ],
+        "client": [
+            "dev.callmeecho.bingusextras.client.BingusExtrasModClient"
+        ],
+        "fabric-datagen": [
+            "dev.callmeecho.bingusextras.datagen.BingusExtrasModDatagen"
+        ]
+    },
+    "mixins": [
+        "bingusextras.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=0.14.24",
+        "minecraft": "~1.20.1",
+        "java": ">=17",
+        "fabric-api": "*",
+        "owo": "*",
+        "trinkets": "*"
+    }
+}

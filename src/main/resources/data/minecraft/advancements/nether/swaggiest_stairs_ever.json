@@ -1,0 +1,40 @@
+{
+  "parent": "minecraft:nether/obtain_ancient_debris",
+  "criteria": {
+    "netherite_stairs": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bingusextras:netherite_stairs"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.nether.swaggiest_stairs_ever.description"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "bingusextras:netherite_stairs"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.nether.swaggiest_stairs_ever.title"
+    }
+  },
+  "rewards": {
+    "experience": 100
+  },
+  "requirements": [
+    [
+      "netherite_stairs"
+    ]
+  ]
+}

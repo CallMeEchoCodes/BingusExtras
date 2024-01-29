@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "W": {
+      "tag": "minecraft:wool"
+    },
+    "D": {
+      "item": "minecraft:dragon_breath"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    }
+  },
+  "pattern": [
+    "WWW",
+    "GDG",
+    "WGW"
+  ],
+  "result": {
+    "item": "bingusextras:cloud_in_a_bottle"
+  }
+}

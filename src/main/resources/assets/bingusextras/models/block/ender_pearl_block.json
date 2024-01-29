@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+    "textures": {
+        "all": "bingusextras:block/ender_pearl_block"
+    }
+}

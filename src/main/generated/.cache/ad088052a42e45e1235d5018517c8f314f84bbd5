@@ -1,0 +1,4 @@
+// 1.20.1	2024-01-29T19:00:47.068634527	BingusExtras/Tags for minecraft:block
+c87630535fc5f8c46800258511eb29d7664ef527 data/minecraft/tags/blocks/stairs.json
+3ee4bdea29e603bd8ab6d2e21525ba5c91c77710 data/minecraft/tags/blocks/mineable/pickaxe.json
+bae46d94095449db7bc44980c3da41df7018f6d5 data/minecraft/tags/blocks/mineable/axe.json
