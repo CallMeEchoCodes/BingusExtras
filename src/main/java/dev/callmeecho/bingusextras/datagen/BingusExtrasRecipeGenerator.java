@@ -1,5 +1,6 @@
 package dev.callmeecho.bingusextras.datagen;
 
+import dev.callmeecho.bingusextras.main.block.SlabBlockWithBase;
 import dev.callmeecho.bingusextras.main.block.StairBlockWithBase;
 import dev.callmeecho.bingusextras.main.registry.BingusExtrasBlockRegistry;
 import io.wispforest.owo.util.ReflectionUtils;
@@ -25,6 +26,14 @@ public class BingusExtrasRecipeGenerator extends FabricRecipeProvider {
                     .input('#', block.getBaseBlock())
                     .pattern("#  ")
                     .pattern("## ")
+                    .pattern("###")
+                    .offerTo(exporter);
+        });
+
+        ReflectionUtils.iterateAccessibleStaticFields(BingusExtrasBlockRegistry.class, SlabBlockWithBase.class, (block, name, field) -> {
+            ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, block, 6)
+                    .criterion(FabricRecipeProvider.hasItem(block.getBaseBlock()), FabricRecipeProvider.conditionsFromItem(block.getBaseBlock()))
+                    .input('#', block.getBaseBlock())
                     .pattern("###")
                     .offerTo(exporter);
         });

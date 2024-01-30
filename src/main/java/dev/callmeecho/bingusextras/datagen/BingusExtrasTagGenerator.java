@@ -1,6 +1,8 @@
 package dev.callmeecho.bingusextras.datagen;
 
+import dev.callmeecho.bingusextras.main.BingusExtrasMod;
 import dev.callmeecho.bingusextras.main.block.BingusExtrasBlock;
+import dev.callmeecho.bingusextras.main.block.SlabBlockWithBase;
 import dev.callmeecho.bingusextras.main.registry.BingusExtrasBlockRegistry;
 import dev.callmeecho.bingusextras.main.block.StairBlockWithBase;
 import io.wispforest.owo.util.ReflectionUtils;
@@ -24,6 +26,7 @@ public class BingusExtrasTagGenerator extends FabricTagProvider<Block> {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup arg) {
         TagKey<Block> stairs = TagKey.of(Registries.BLOCK.getKey(), new Identifier("minecraft", "stairs"));
+        TagKey<Block> slabs = TagKey.of(Registries.BLOCK.getKey(), new Identifier("minecraft", "slabs"));
 
         TagKey<Block> pickaxe = TagKey.of(Registries.BLOCK.getKey(), new Identifier("minecraft", "mineable/pickaxe"));
         TagKey<Block> shovel = TagKey.of(Registries.BLOCK.getKey(), new Identifier("minecraft", "mineable/shovel"));
@@ -33,6 +36,25 @@ public class BingusExtrasTagGenerator extends FabricTagProvider<Block> {
         ReflectionUtils.iterateAccessibleStaticFields(BingusExtrasBlockRegistry.class, StairBlockWithBase.class, (block, name, field) -> {
             this.getOrCreateTagBuilder(stairs).add(block);
             
+            switch (block.toolType) {
+                case PICKAXE:
+                    this.getOrCreateTagBuilder(pickaxe).add(block);
+                    break;
+                case SHOVEL:
+                    this.getOrCreateTagBuilder(shovel).add(block);
+                    break;
+                case HOE:
+                    this.getOrCreateTagBuilder(hoe).add(block);
+                    break;
+                case AXE:
+                    this.getOrCreateTagBuilder(axe).add(block);
+                    break;
+            }
+        });
+
+        ReflectionUtils.iterateAccessibleStaticFields(BingusExtrasBlockRegistry.class, SlabBlockWithBase.class, (block, name, field) -> {
+            this.getOrCreateTagBuilder(slabs).add(block);
+
             switch (block.toolType) {
                 case PICKAXE:
                     this.getOrCreateTagBuilder(pickaxe).add(block);

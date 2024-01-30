@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "bingusextras:block/spruce_wood_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/spruce_wood"
+    },
+    "type=top": {
+      "model": "bingusextras:block/spruce_wood_slab_top"
+    }
+  }
+}

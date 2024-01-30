@@ -1,5 +1,6 @@
 package dev.callmeecho.bingusextras.datagen;
 
+import dev.callmeecho.bingusextras.main.block.SlabBlockWithBase;
 import dev.callmeecho.bingusextras.main.block.StairBlockWithBase;
 import dev.callmeecho.bingusextras.main.registry.BingusExtrasBlockRegistry;
 import io.wispforest.owo.util.ReflectionUtils;
@@ -21,9 +22,20 @@ public class BingusExtrasLanguageGenerator extends FabricLanguageProvider {
             StringBuilder stringBuilder = new StringBuilder();
             for (String part : nameParts) {
                 if (part.contains("block")) continue;
-                stringBuilder.append(part.substring(0, 1).toUpperCase()).append(part.substring(1).toLowerCase()).append(" ");
+                stringBuilder.append(part.substring(0, 1).toUpperCase()).append(part.substring(1).toLowerCase().toLowerCase()).append(" ");
             }
             
+            translationBuilder.add(block, stringBuilder.substring(0, stringBuilder.length() - 1));
+        });
+
+        ReflectionUtils.iterateAccessibleStaticFields(BingusExtrasBlockRegistry.class, SlabBlockWithBase.class, (block, name, field) -> {
+            String[] nameParts = name.split("_");
+            StringBuilder stringBuilder = new StringBuilder();
+            for (String part : nameParts) {
+                if (part.contains("block")) continue;
+                stringBuilder.append(part.substring(0, 1).toUpperCase()).append(part.substring(1).toLowerCase()).append(" ");
+            }
+
             translationBuilder.add(block, stringBuilder.substring(0, stringBuilder.length() - 1));
         });
 

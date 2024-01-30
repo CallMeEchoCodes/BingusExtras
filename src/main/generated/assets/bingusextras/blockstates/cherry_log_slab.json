@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "bingusextras:block/cherry_log_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/cherry_log"
+    },
+    "type=top": {
+      "model": "bingusextras:block/cherry_log_slab_top"
+    }
+  }
+}

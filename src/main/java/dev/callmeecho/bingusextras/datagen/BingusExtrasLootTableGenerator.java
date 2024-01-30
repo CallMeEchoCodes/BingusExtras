@@ -1,5 +1,6 @@
 package dev.callmeecho.bingusextras.datagen;
 
+import dev.callmeecho.bingusextras.main.block.SlabBlockWithBase;
 import dev.callmeecho.bingusextras.main.block.StairBlockWithBase;
 import dev.callmeecho.bingusextras.main.registry.BingusExtrasBlockRegistry;
 import io.wispforest.owo.util.ReflectionUtils;
@@ -25,6 +26,10 @@ public class BingusExtrasLootTableGenerator extends FabricBlockLootTableProvider
     @Override
     public void accept(BiConsumer<Identifier, LootTable.Builder> biConsumer) {
         ReflectionUtils.iterateAccessibleStaticFields(BingusExtrasBlockRegistry.class, StairBlockWithBase.class, (block, name, field) -> {
+            biConsumer.accept(block.getLootTableId(), this.drops(block, ConstantLootNumberProvider.create(1.0F)));
+        });
+
+        ReflectionUtils.iterateAccessibleStaticFields(BingusExtrasBlockRegistry.class, SlabBlockWithBase.class, (block, name, field) -> {
             biConsumer.accept(block.getLootTableId(), this.drops(block, ConstantLootNumberProvider.create(1.0F)));
         });
     }

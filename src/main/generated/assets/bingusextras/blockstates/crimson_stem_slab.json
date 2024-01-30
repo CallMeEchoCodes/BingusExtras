@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "bingusextras:block/crimson_stem_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/crimson_stem"
+    },
+    "type=top": {
+      "model": "bingusextras:block/crimson_stem_slab_top"
+    }
+  }
+}
