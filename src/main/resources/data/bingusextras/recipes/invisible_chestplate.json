@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "G": {
+      "item": "minecraft:glass"
+    }
+  },
+  "pattern": [
+    "G G",
+    "GGG",
+    "GGG"
+  ],
+  "result": {
+    "item": "bingusextras:invisible_chestplate"
+  }
+}

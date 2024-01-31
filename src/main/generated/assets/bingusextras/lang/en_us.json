@@ -79,5 +79,9 @@
   "block.bingusextras.what": "???",
   "item.bingusextras.cloud_in_a_bottle": "Cloud in a Bottle",
   "item.bingusextras.ender_artifact": "Artifact of The End",
+  "item.bingusextras.invisible_boots": "Glass Boots",
+  "item.bingusextras.invisible_chestplate": "Glass Chestplate",
+  "item.bingusextras.invisible_helmet": "Glass Helmet",
+  "item.bingusextras.invisible_leggings": "Glass Leggings",
   "itemGroup.bingusextras.item_group": "BingusExtras"
 }
