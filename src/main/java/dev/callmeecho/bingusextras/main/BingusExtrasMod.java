@@ -67,14 +67,14 @@ public class BingusExtrasMod implements ModInitializer {
         GROUP.initialize();
 
         // why are ender pearls not stackable to 64 :sob:
-        for (Item item : Registries.ITEM) {
-            if (item.getMaxCount() == 16) {
-                Field field;
-                try { field = Item.class.getDeclaredField("maxCount"); } catch (NoSuchFieldException e) { throw new RuntimeException(e); }
-                field.setAccessible(true);
-                try { field.set(item, 64); } catch (IllegalAccessException e) { throw new RuntimeException(e); }
-            }
-        }
+        //for (Item item : Registries.ITEM) {
+        //    if (item.getMaxCount() == 16) {
+        //        Field field;
+        //        try { field = Item.class.getDeclaredField("maxCount"); } catch (NoSuchFieldException e) { throw new RuntimeException(e); }
+        //        field.setAccessible(true);
+        //        try { field.set(item, 64); } catch (IllegalAccessException e) { throw new RuntimeException(e); }
+        //    }
+        //}
 
         LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
             if (source.isBuiltin() && id.getPath().contains("entities/enderman") && id.getNamespace().equals("minecraft")) {

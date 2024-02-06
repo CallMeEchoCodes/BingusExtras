@@ -1,7 +1,23 @@
 {
   "replace": false,
   "values": [
+    "bingusextras:gold_stairs",
+    "bingusextras:iron_stairs",
+    "bingusextras:diamond_stairs",
+    "bingusextras:emerald_stairs",
+    "bingusextras:lapis_stairs",
+    "bingusextras:redstone_stairs",
+    "bingusextras:coal_stairs",
+    "bingusextras:ancient_debris_stairs",
     "bingusextras:netherite_stairs",
+    "bingusextras:gold_slab",
+    "bingusextras:iron_slab",
+    "bingusextras:diamond_slab",
+    "bingusextras:emerald_slab",
+    "bingusextras:lapis_slab",
+    "bingusextras:redstone_slab",
+    "bingusextras:coal_slab",
+    "bingusextras:ancient_debris_slab",
     "bingusextras:netherite_slab",
     "bingusextras:ender_pearl_block"
   ]

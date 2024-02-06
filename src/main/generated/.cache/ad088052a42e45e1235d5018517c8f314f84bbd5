@@ -1,5 +1,5 @@
-// 1.20.1	2024-02-01T13:09:17.398181389	BingusExtras/Tags for minecraft:block
-c87630535fc5f8c46800258511eb29d7664ef527 data/minecraft/tags/blocks/stairs.json
-a9340a99f007856fecfe28954cce279357852a1c data/minecraft/tags/blocks/mineable/pickaxe.json
-4063d6eaf94bb8f9a53ae93a6b1d6ee18e9b076b data/minecraft/tags/blocks/slabs.json
+// 1.20.1	2024-02-06T17:37:26.275384364	BingusExtras/Tags for minecraft:block
+e603ff4040231beb688f8ab5477451d60a45fcfb data/minecraft/tags/blocks/stairs.json
+f194bb8772806d9d5a37ef110bef1a251e5f928b data/minecraft/tags/blocks/mineable/pickaxe.json
+84167093b149b5a84d63ccfb4a73830b2fc637ec data/minecraft/tags/blocks/slabs.json
 54e74147ab74c535e448de865af2cc9a8332adaa data/minecraft/tags/blocks/mineable/axe.json

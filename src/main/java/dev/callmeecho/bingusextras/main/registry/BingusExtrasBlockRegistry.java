@@ -89,11 +89,35 @@ public class BingusExtrasBlockRegistry implements BlockRegistryContainer {
     public static final StairBlockWithBase WARPED_HYPHAE_STAIRS = new StrippableStairBlock(Blocks.WARPED_HYPHAE, STRIPPED_WARPED_HYPHAE_STAIRS, "warped_stem");
     public static final SlabBlockWithBase WARPED_HYPHAE_SLAB = new StrippableSlabBlock(Blocks.WARPED_HYPHAE, STRIPPED_WARPED_HYPHAE_SLAB, "warped_stem");
 
+    public static final StairBlockWithBase GOLD_STAIRS = new StairBlockWithBase(Blocks.GOLD_BLOCK, "gold_block", BingusExtrasMod.ToolType.PICKAXE);
+    public static final SlabBlockWithBase GOLD_SLAB = new SlabBlockWithBase(Blocks.GOLD_BLOCK, "gold_block", BingusExtrasMod.ToolType.PICKAXE);
+    
+    public static final StairBlockWithBase IRON_STAIRS = new StairBlockWithBase(Blocks.IRON_BLOCK, "iron_block", BingusExtrasMod.ToolType.PICKAXE);
+    public static final SlabBlockWithBase IRON_SLAB = new SlabBlockWithBase(Blocks.IRON_BLOCK, "iron_block", BingusExtrasMod.ToolType.PICKAXE);
+    
+    public static final StairBlockWithBase DIAMOND_STAIRS = new StairBlockWithBase(Blocks.DIAMOND_BLOCK, "diamond_block", BingusExtrasMod.ToolType.PICKAXE);
+    public static final SlabBlockWithBase DIAMOND_SLAB = new SlabBlockWithBase(Blocks.DIAMOND_BLOCK, "diamond_block", BingusExtrasMod.ToolType.PICKAXE);
+    
+    public static final StairBlockWithBase EMERALD_STAIRS = new StairBlockWithBase(Blocks.EMERALD_BLOCK, "emerald_block", BingusExtrasMod.ToolType.PICKAXE);
+    public static final SlabBlockWithBase EMERALD_SLAB = new SlabBlockWithBase(Blocks.EMERALD_BLOCK, "emerald_block", BingusExtrasMod.ToolType.PICKAXE);
+    
+    public static final StairBlockWithBase LAPIS_STAIRS = new StairBlockWithBase(Blocks.LAPIS_BLOCK, "lapis_block", BingusExtrasMod.ToolType.PICKAXE);
+    public static final SlabBlockWithBase LAPIS_SLAB = new SlabBlockWithBase(Blocks.LAPIS_BLOCK, "lapis_block", BingusExtrasMod.ToolType.PICKAXE);
+    
+    public static final StairBlockWithBase REDSTONE_STAIRS = new StairBlockWithBase(Blocks.REDSTONE_BLOCK, "redstone_block", BingusExtrasMod.ToolType.PICKAXE);
+    public static final SlabBlockWithBase REDSTONE_SLAB = new SlabBlockWithBase(Blocks.REDSTONE_BLOCK, "redstone_block", BingusExtrasMod.ToolType.PICKAXE);
+    
+    public static final StairBlockWithBase COAL_STAIRS = new StairBlockWithBase(Blocks.COAL_BLOCK, "coal_block", BingusExtrasMod.ToolType.PICKAXE);
+    public static final SlabBlockWithBase COAL_SLAB = new SlabBlockWithBase(Blocks.COAL_BLOCK, "coal_block", BingusExtrasMod.ToolType.PICKAXE);
+    
+    public static final StairBlockWithBase ANCIENT_DEBRIS_STAIRS = new StairBlockWithBase(Blocks.ANCIENT_DEBRIS, "ancient_debris_side", "ancient_debris_top", BingusExtrasMod.ToolType.PICKAXE);
+    public static final SlabBlockWithBase ANCIENT_DEBRIS_SLAB = new SlabBlockWithBase(Blocks.ANCIENT_DEBRIS, "ancient_debris_side", "ancient_debris_top", BingusExtrasMod.ToolType.PICKAXE);
     public static final StairBlockWithBase NETHERITE_STAIRS = new StairBlockWithBase(Blocks.NETHERITE_BLOCK, "netherite_block", BingusExtrasMod.ToolType.PICKAXE);
     public static final SlabBlockWithBase NETHERITE_SLAB = new SlabBlockWithBase(Blocks.NETHERITE_BLOCK, "netherite_block", BingusExtrasMod.ToolType.PICKAXE);
     
     public static final BingusExtrasBlock ENDER_PEARL_BLOCK = new EnderPearlBlock(FabricBlockSettings.create().mapColor(MapColor.DARK_AQUA).emissiveLighting(Blocks::always).luminance(state -> 5).sounds(BlockSoundGroup.BONE).requiresTool().strength(1.5F, 6.0F), BingusExtrasMod.ToolType.PICKAXE);
     public static final BingusExtrasBlock WHAT = new BingusExtrasBlock(FabricBlockSettings.create().mapColor(MapColor.BLACK).emissiveLighting(Blocks::always).sounds(BlockSoundGroup.SCULK).strength(-1.0f, 3600000.0f).dropsNothing().allowsSpawning(Blocks::never).pistonBehavior(PistonBehavior.BLOCK));
+    public static final BingusExtrasBlock RORY_BLOCK = new BingusExtrasBlock(FabricBlockSettings.create().mapColor(MapColor.BROWN).sounds(BlockSoundGroup.BONE).strength(1.5F, 6.0F).requiresTool().luminance(state -> 1));
     
     @Override
     public BlockItem createBlockItem(Block block, String identifier) {
