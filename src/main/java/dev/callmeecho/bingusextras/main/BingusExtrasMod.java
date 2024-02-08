@@ -1,6 +1,7 @@
 package dev.callmeecho.bingusextras.main;
 
 import dev.callmeecho.bingusextras.main.registry.BingusExtrasBlockRegistry;
+import dev.callmeecho.bingusextras.main.registry.BingusExtrasEnchantmentRegistry;
 import dev.callmeecho.bingusextras.main.registry.BingusExtrasItemRegistry;
 import io.wispforest.owo.itemgroup.Icon;
 import io.wispforest.owo.itemgroup.OwoItemGroup;
@@ -63,6 +64,7 @@ public class BingusExtrasMod implements ModInitializer {
         LOGGER.info("Loading BingusExtras...");
         FieldRegistrationHandler.register(BingusExtrasBlockRegistry.class, MODID, false);
         FieldRegistrationHandler.register(BingusExtrasItemRegistry.class, MODID, false);
+        FieldRegistrationHandler.register(BingusExtrasEnchantmentRegistry.class, MODID, false);
         
         GROUP.initialize();
 
