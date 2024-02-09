@@ -95,6 +95,9 @@ public class BingusExtrasBlockRegistry implements BlockRegistryContainer {
     public static final StairBlockWithBase IRON_STAIRS = new StairBlockWithBase(Blocks.IRON_BLOCK, "iron_block", BingusExtrasMod.ToolType.PICKAXE);
     public static final SlabBlockWithBase IRON_SLAB = new SlabBlockWithBase(Blocks.IRON_BLOCK, "iron_block", BingusExtrasMod.ToolType.PICKAXE);
     
+    public static final StairBlockWithBase COPPER_STAIRS = new StairBlockWithBase(Blocks.COPPER_BLOCK, "copper_block", BingusExtrasMod.ToolType.PICKAXE);
+    public static final SlabBlockWithBase COPPER_SLAB = new SlabBlockWithBase(Blocks.COPPER_BLOCK, "copper_block", BingusExtrasMod.ToolType.PICKAXE);
+    
     public static final StairBlockWithBase DIAMOND_STAIRS = new StairBlockWithBase(Blocks.DIAMOND_BLOCK, "diamond_block", BingusExtrasMod.ToolType.PICKAXE);
     public static final SlabBlockWithBase DIAMOND_SLAB = new SlabBlockWithBase(Blocks.DIAMOND_BLOCK, "diamond_block", BingusExtrasMod.ToolType.PICKAXE);
     
@@ -115,9 +118,72 @@ public class BingusExtrasBlockRegistry implements BlockRegistryContainer {
     public static final StairBlockWithBase NETHERITE_STAIRS = new StairBlockWithBase(Blocks.NETHERITE_BLOCK, "netherite_block", BingusExtrasMod.ToolType.PICKAXE);
     public static final SlabBlockWithBase NETHERITE_SLAB = new SlabBlockWithBase(Blocks.NETHERITE_BLOCK, "netherite_block", BingusExtrasMod.ToolType.PICKAXE);
     
+    public static final StairBlockWithBase GILDED_BLACKSTONE_STAIRS = new StairBlockWithBase(Blocks.GILDED_BLACKSTONE, "gilded_blackstone", BingusExtrasMod.ToolType.PICKAXE);
+    public static final SlabBlockWithBase GILDED_BLACKSTONE_SLAB = new SlabBlockWithBase(Blocks.GILDED_BLACKSTONE, "gilded_blackstone", BingusExtrasMod.ToolType.PICKAXE);
+    
+    public static final StairBlockWithBase RAW_IRON_STAIRS = new StairBlockWithBase(Blocks.RAW_IRON_BLOCK, "raw_iron_block", BingusExtrasMod.ToolType.PICKAXE);
+    public static final SlabBlockWithBase RAW_IRON_SLAB = new SlabBlockWithBase(Blocks.RAW_IRON_BLOCK, "raw_iron_block", BingusExtrasMod.ToolType.PICKAXE);
+    
+    public static final StairBlockWithBase RAW_COPPER_STAIRS = new StairBlockWithBase(Blocks.RAW_COPPER_BLOCK, "raw_copper_block", BingusExtrasMod.ToolType.PICKAXE);
+    public static final SlabBlockWithBase RAW_COPPER_SLAB = new SlabBlockWithBase(Blocks.RAW_COPPER_BLOCK, "raw_copper_block", BingusExtrasMod.ToolType.PICKAXE);
+    
+    public static final StairBlockWithBase RAW_GOLD_STAIRS = new StairBlockWithBase(Blocks.RAW_GOLD_BLOCK, "raw_gold_block", BingusExtrasMod.ToolType.PICKAXE);
+    public static final SlabBlockWithBase RAW_GOLD_SLAB = new SlabBlockWithBase(Blocks.RAW_GOLD_BLOCK, "raw_gold_block", BingusExtrasMod.ToolType.PICKAXE);
+    
+    public static final StairBlockWithBase WHITE_WOOL_STAIRS = new StairBlockWithBase(Blocks.WHITE_WOOL, "white_wool");
+    public static final SlabBlockWithBase WHITE_WOOL_SLAB = new SlabBlockWithBase(Blocks.WHITE_WOOL, "white_wool");
+    
+    public static final StairBlockWithBase LIGHT_GRAY_WOOL_STAIRS = new StairBlockWithBase(Blocks.LIGHT_GRAY_WOOL, "light_gray_wool");
+    public static final SlabBlockWithBase LIGHT_GRAY_WOOL_SLAB = new SlabBlockWithBase(Blocks.LIGHT_GRAY_WOOL, "light_gray_wool");
+    
+    public static final StairBlockWithBase GRAY_WOOL_STAIRS = new StairBlockWithBase(Blocks.GRAY_WOOL, "gray_wool");
+    public static final SlabBlockWithBase GRAY_WOOL_SLAB = new SlabBlockWithBase(Blocks.GRAY_WOOL, "gray_wool");
+    
+    public static final StairBlockWithBase BLACK_WOOL_STAIRS = new StairBlockWithBase(Blocks.BLACK_WOOL, "black_wool");
+    public static final SlabBlockWithBase BLACK_WOOL_SLAB = new SlabBlockWithBase(Blocks.BLACK_WOOL, "black_wool");
+    
+    public static final StairBlockWithBase BROWN_WOOL_STAIRS = new StairBlockWithBase(Blocks.BROWN_WOOL, "brown_wool");
+    public static final SlabBlockWithBase BROWN_WOOL_SLAB = new SlabBlockWithBase(Blocks.BROWN_WOOL, "brown_wool");
+    
+    public static final StairBlockWithBase RED_WOOL_STAIRS = new StairBlockWithBase(Blocks.RED_WOOL, "red_wool");
+    public static final SlabBlockWithBase RED_WOOL_SLAB = new SlabBlockWithBase(Blocks.RED_WOOL, "red_wool");
+    
+    public static final StairBlockWithBase ORANGE_WOOL_STAIRS = new StairBlockWithBase(Blocks.ORANGE_WOOL, "orange_wool");
+    public static final SlabBlockWithBase ORANGE_WOOL_SLAB = new SlabBlockWithBase(Blocks.ORANGE_WOOL, "orange_wool");
+    
+    public static final StairBlockWithBase YELLOW_WOOL_STAIRS = new StairBlockWithBase(Blocks.YELLOW_WOOL, "yellow_wool");
+    public static final SlabBlockWithBase YELLOW_WOOL_SLAB = new SlabBlockWithBase(Blocks.YELLOW_WOOL, "yellow_wool");
+    
+    public static final StairBlockWithBase LIME_WOOL_STAIRS = new StairBlockWithBase(Blocks.LIME_WOOL, "lime_wool");
+    public static final SlabBlockWithBase LIME_WOOL_SLAB = new SlabBlockWithBase(Blocks.LIME_WOOL, "lime_wool");
+    
+    public static final StairBlockWithBase GREEN_WOOL_STAIRS = new StairBlockWithBase(Blocks.GREEN_WOOL, "green_wool");
+    public static final SlabBlockWithBase GREEN_WOOL_SLAB = new SlabBlockWithBase(Blocks.GREEN_WOOL, "green_wool");
+    
+    public static final StairBlockWithBase CYAN_WOOL_STAIRS = new StairBlockWithBase(Blocks.CYAN_WOOL, "cyan_wool");
+    public static final SlabBlockWithBase CYAN_WOOL_SLAB = new SlabBlockWithBase(Blocks.CYAN_WOOL, "cyan_wool");
+    
+    public static final StairBlockWithBase LIGHT_BLUE_WOOL_STAIRS = new StairBlockWithBase(Blocks.LIGHT_BLUE_WOOL, "light_blue_wool");
+    public static final SlabBlockWithBase LIGHT_BLUE_WOOL_SLAB = new SlabBlockWithBase(Blocks.LIGHT_BLUE_WOOL, "light_blue_wool");
+    
+    public static final StairBlockWithBase BLUE_WOOL_STAIRS = new StairBlockWithBase(Blocks.BLUE_WOOL, "blue_wool");
+    public static final SlabBlockWithBase BLUE_WOOL_SLAB = new SlabBlockWithBase(Blocks.BLUE_WOOL, "blue_wool");
+    
+    public static final StairBlockWithBase PURPLE_WOOL_STAIRS = new StairBlockWithBase(Blocks.PURPLE_WOOL, "purple_wool");
+    public static final SlabBlockWithBase PURPLE_WOOL_SLAB = new SlabBlockWithBase(Blocks.PURPLE_WOOL, "purple_wool");
+    
+    public static final StairBlockWithBase MAGENTA_WOOL_STAIRS = new StairBlockWithBase(Blocks.MAGENTA_WOOL, "magenta_wool");
+    public static final SlabBlockWithBase MAGENTA_WOOL_SLAB = new SlabBlockWithBase(Blocks.MAGENTA_WOOL, "magenta_wool");
+    
+    public static final StairBlockWithBase PINK_WOOL_STAIRS = new StairBlockWithBase(Blocks.PINK_WOOL, "pink_wool");
+    public static final SlabBlockWithBase PINK_WOOL_SLAB = new SlabBlockWithBase(Blocks.PINK_WOOL, "pink_wool");
+    
     public static final BingusExtrasBlock ENDER_PEARL_BLOCK = new EnderPearlBlock(FabricBlockSettings.create().mapColor(MapColor.DARK_AQUA).emissiveLighting(Blocks::always).luminance(state -> 5).sounds(BlockSoundGroup.BONE).requiresTool().strength(1.5F, 6.0F), BingusExtrasMod.ToolType.PICKAXE);
     public static final BingusExtrasBlock WHAT = new BingusExtrasBlock(FabricBlockSettings.create().mapColor(MapColor.BLACK).emissiveLighting(Blocks::always).sounds(BlockSoundGroup.SCULK).strength(-1.0f, 3600000.0f).dropsNothing().allowsSpawning(Blocks::never).pistonBehavior(PistonBehavior.BLOCK));
     public static final BingusExtrasBlock RORY_BLOCK = new BingusExtrasBlock(FabricBlockSettings.create().mapColor(MapColor.BROWN).sounds(BlockSoundGroup.BONE).strength(1.5F, 6.0F).requiresTool().luminance(state -> 1));
+    public static final StairBlockWithBase RORY_STAIRS = new StairBlockWithBase(RORY_BLOCK, "rory_block", BingusExtrasMod.ToolType.PICKAXE);
+    public static final SlabBlockWithBase RORY_SLAB = new SlabBlockWithBase(RORY_BLOCK, "rory_block", BingusExtrasMod.ToolType.PICKAXE);
+    
     
     @Override
     public BlockItem createBlockItem(Block block, String identifier) {

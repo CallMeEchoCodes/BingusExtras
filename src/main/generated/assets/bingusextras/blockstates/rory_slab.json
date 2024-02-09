@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "bingusextras:block/rory_slab"
+    },
+    "type=double": {
+      "model": "bingusextras:block/rory_block"
+    },
+    "type=top": {
+      "model": "bingusextras:block/rory_slab_top"
+    }
+  }
+}

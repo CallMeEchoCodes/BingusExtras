@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "bingusextras:block/rory_block",
+    "side": "bingusextras:block/rory_block",
+    "top": "bingusextras:block/rory_block"
+  }
+}
