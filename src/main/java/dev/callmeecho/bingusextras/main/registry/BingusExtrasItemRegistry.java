@@ -3,6 +3,7 @@ package dev.callmeecho.bingusextras.main.registry;
 import dev.callmeecho.bingusextras.main.BingusExtrasMod;
 import dev.callmeecho.bingusextras.main.item.BanHammer;
 import dev.callmeecho.bingusextras.main.item.InvisibleMaterial;
+import dev.callmeecho.bingusextras.main.item.NetheriteTrident;
 import dev.callmeecho.bingusextras.main.item.trinket.CloudInABottle;
 import dev.callmeecho.bingusextras.main.item.trinket.EnderArtifact;
 import io.wispforest.owo.itemgroup.OwoItemSettings;
@@ -23,4 +24,5 @@ public class BingusExtrasItemRegistry implements ItemRegistryContainer {
     public static final Item INVISIBLE_BOOTS = new ArmorItem(InvisibleMaterial, ArmorItem.Type.BOOTS, new OwoItemSettings().maxCount(1).group(BingusExtrasMod.GROUP));
 
     public static final Item BAN_HAMMER = new BanHammer(ToolMaterials.NETHERITE, 7.0f, -3.0f, new OwoItemSettings().maxCount(1).fireproof().group(BingusExtrasMod.GROUP).maxDamage(9999));
+    public static final Item NETHERITE_TRIDENT = new NetheriteTrident(new OwoItemSettings().maxCount(1).fireproof().group(BingusExtrasMod.GROUP).maxDamage(500));
 }

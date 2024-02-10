@@ -31,7 +31,9 @@ public class BingusExtrasBlockRegistry implements BlockRegistryContainer {
     public static final SlabBlockWithBase STRIPPED_CRIMSON_STEM_SLAB = new SlabBlockWithBase(Blocks.STRIPPED_CRIMSON_STEM, "stripped_crimson_stem", "stripped_crimson_stem", BingusExtrasMod.ToolType.AXE);
     public static final StairBlockWithBase STRIPPED_WARPED_STEM_STAIRS = new StairBlockWithBase(Blocks.STRIPPED_WARPED_STEM, "stripped_warped_stem", "stripped_warped_stem", BingusExtrasMod.ToolType.AXE);
     public static final SlabBlockWithBase STRIPPED_WARPED_STEM_SLAB = new SlabBlockWithBase(Blocks.STRIPPED_WARPED_STEM, "stripped_warped_stem", "stripped_warped_stem", BingusExtrasMod.ToolType.AXE);
-
+    public static final StairBlockWithBase STRIPPED_MANGROVE_LOG_STAIRS = new StairBlockWithBase(Blocks.STRIPPED_MANGROVE_LOG, "stripped_mangrove_log", "stripped_mangrove_log_top", BingusExtrasMod.ToolType.AXE);
+    public static final SlabBlockWithBase STRIPPED_MANGROVE_LOG_SLAB = new SlabBlockWithBase(Blocks.STRIPPED_MANGROVE_LOG, "stripped_mangrove_log", "stripped_mangrove_log_top", BingusExtrasMod.ToolType.AXE);
+    
     public static final StairBlockWithBase OAK_LOG_STAIRS = new StrippableStairBlock(Blocks.OAK_LOG, STRIPPED_OAK_LOG_STAIRS, "oak_log", "oak_log_top");
     public static final SlabBlockWithBase OAK_LOG_SLAB = new StrippableSlabBlock(Blocks.OAK_LOG, STRIPPED_OAK_LOG_SLAB, "oak_log", "oak_log_top");
     public static final StairBlockWithBase SPRUCE_LOG_STAIRS = new StrippableStairBlock(Blocks.SPRUCE_LOG, STRIPPED_SPRUCE_LOG_STAIRS, "spruce_log", "spruce_log_top");
@@ -50,6 +52,8 @@ public class BingusExtrasBlockRegistry implements BlockRegistryContainer {
     public static final SlabBlockWithBase CRIMSON_STEM_SLAB = new StrippableSlabBlock(Blocks.CRIMSON_STEM, STRIPPED_CRIMSON_STEM_SLAB, "crimson_stem", "crimson_stem_top");
     public static final StairBlockWithBase WARPED_STEM_STAIRS = new StrippableStairBlock(Blocks.WARPED_STEM, STRIPPED_WARPED_STEM_STAIRS, "warped_stem", "warped_stem_top");
     public static final SlabBlockWithBase WARPED_STEM_SLAB = new StrippableSlabBlock(Blocks.WARPED_STEM, STRIPPED_WARPED_STEM_SLAB, "warped_stem", "warped_stem_top");
+    public static final StairBlockWithBase MANGROVE_LOG_STAIRS = new StrippableStairBlock(Blocks.MANGROVE_LOG, STRIPPED_MANGROVE_LOG_STAIRS, "mangrove_log", "mangrove_log_top");
+    public static final SlabBlockWithBase MANGROVE_LOG_SLAB = new StrippableSlabBlock(Blocks.MANGROVE_LOG, STRIPPED_MANGROVE_LOG_SLAB, "mangrove_log", "mangrove_log_top");
 
     public static final StairBlockWithBase STRIPPED_OAK_WOOD_STAIRS = new StairBlockWithBase(Blocks.STRIPPED_OAK_WOOD, "stripped_oak_log", BingusExtrasMod.ToolType.AXE);
     public static final SlabBlockWithBase STRIPPED_OAK_WOOD_SLAB = new SlabBlockWithBase(Blocks.STRIPPED_OAK_WOOD, "stripped_oak_log", BingusExtrasMod.ToolType.AXE);
@@ -69,7 +73,9 @@ public class BingusExtrasBlockRegistry implements BlockRegistryContainer {
     public static final SlabBlockWithBase STRIPPED_CRIMSON_HYPHAE_SLAB = new SlabBlockWithBase(Blocks.STRIPPED_CRIMSON_HYPHAE, "stripped_crimson_stem", BingusExtrasMod.ToolType.AXE);
     public static final StairBlockWithBase STRIPPED_WARPED_HYPHAE_STAIRS = new StairBlockWithBase(Blocks.STRIPPED_WARPED_HYPHAE, "stripped_warped_stem", BingusExtrasMod.ToolType.AXE);
     public static final SlabBlockWithBase STRIPPED_WARPED_HYPHAE_SLAB = new SlabBlockWithBase(Blocks.STRIPPED_WARPED_HYPHAE, "stripped_warped_stem", BingusExtrasMod.ToolType.AXE);
-
+    public static final StairBlockWithBase STRIPPED_MANGROVE_WOOD_STAIRS = new StairBlockWithBase(Blocks.STRIPPED_MANGROVE_WOOD, "stripped_mangrove_log", BingusExtrasMod.ToolType.AXE);
+    public static final SlabBlockWithBase STRIPPED_MANGROVE_WOOD_SLAB = new SlabBlockWithBase(Blocks.STRIPPED_MANGROVE_WOOD, "stripped_mangrove_log", BingusExtrasMod.ToolType.AXE);
+    
     public static final StairBlockWithBase OAK_WOOD_STAIRS = new StrippableStairBlock(Blocks.OAK_WOOD, STRIPPED_OAK_WOOD_STAIRS, "oak_log");
     public static final SlabBlockWithBase OAK_WOOD_SLAB = new StrippableSlabBlock(Blocks.OAK_WOOD, STRIPPED_OAK_WOOD_SLAB, "oak_log");
     public static final StairBlockWithBase SPRUCE_WOOD_STAIRS = new StrippableStairBlock(Blocks.SPRUCE_WOOD, STRIPPED_SPRUCE_WOOD_STAIRS, "spruce_log");
@@ -88,6 +94,8 @@ public class BingusExtrasBlockRegistry implements BlockRegistryContainer {
     public static final SlabBlockWithBase CRIMSON_HYPHAE_SLAB = new StrippableSlabBlock(Blocks.CRIMSON_HYPHAE, STRIPPED_CRIMSON_HYPHAE_SLAB, "crimson_stem");
     public static final StairBlockWithBase WARPED_HYPHAE_STAIRS = new StrippableStairBlock(Blocks.WARPED_HYPHAE, STRIPPED_WARPED_HYPHAE_STAIRS, "warped_stem");
     public static final SlabBlockWithBase WARPED_HYPHAE_SLAB = new StrippableSlabBlock(Blocks.WARPED_HYPHAE, STRIPPED_WARPED_HYPHAE_SLAB, "warped_stem");
+    public static final StairBlockWithBase MANGROVE_WOOD_STAIRS = new StrippableStairBlock(Blocks.MANGROVE_WOOD, STRIPPED_MANGROVE_WOOD_STAIRS, "mangrove_log");
+    public static final SlabBlockWithBase MANGROVE_WOOD_SLAB = new StrippableSlabBlock(Blocks.MANGROVE_WOOD, STRIPPED_MANGROVE_WOOD_SLAB, "mangrove_log");
 
     public static final StairBlockWithBase GOLD_STAIRS = new StairBlockWithBase(Blocks.GOLD_BLOCK, "gold_block", BingusExtrasMod.ToolType.PICKAXE);
     public static final SlabBlockWithBase GOLD_SLAB = new SlabBlockWithBase(Blocks.GOLD_BLOCK, "gold_block", BingusExtrasMod.ToolType.PICKAXE);

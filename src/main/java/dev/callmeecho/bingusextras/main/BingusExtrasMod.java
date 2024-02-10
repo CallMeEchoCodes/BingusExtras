@@ -1,7 +1,9 @@
 package dev.callmeecho.bingusextras.main;
 
+import dev.callmeecho.bingusextras.main.entity.projectile.NetheriteTridentEntity;
 import dev.callmeecho.bingusextras.main.registry.BingusExtrasBlockRegistry;
 import dev.callmeecho.bingusextras.main.registry.BingusExtrasEnchantmentRegistry;
+import dev.callmeecho.bingusextras.main.registry.BingusExtrasEntityTypeRegistry;
 import dev.callmeecho.bingusextras.main.registry.BingusExtrasItemRegistry;
 import io.wispforest.owo.itemgroup.Icon;
 import io.wispforest.owo.itemgroup.OwoItemGroup;
@@ -9,10 +11,14 @@ import io.wispforest.owo.registration.reflect.FieldRegistrationHandler;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.loot.v2.FabricLootPoolBuilder;
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityDimensions;
+import net.minecraft.entity.EntityType;
+import net.minecraft.entity.SpawnGroup;
 import net.minecraft.entity.mob.EndermanEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
@@ -21,6 +27,7 @@ import net.minecraft.loot.condition.KilledByPlayerLootCondition;
 import net.minecraft.loot.condition.RandomChanceWithLootingLootCondition;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -55,6 +62,7 @@ public class BingusExtrasMod implements ModInitializer {
     }
     public static final String MODID = "bingusextras";
     public static final Logger LOGGER = LogManager.getLogger(MODID);
+    public static final Identifier NETHERITE_TRIDENT_RIPTIDE = new Identifier(MODID, "textures/entity/netherite_trident_riptide.png");
     public static final OwoItemGroup GROUP = OwoItemGroup
             .builder(new Identifier(MODID, "item_group"), () -> Icon.of(Items.DIAMOND_HELMET))
             .build();
@@ -65,6 +73,7 @@ public class BingusExtrasMod implements ModInitializer {
         FieldRegistrationHandler.register(BingusExtrasBlockRegistry.class, MODID, false);
         FieldRegistrationHandler.register(BingusExtrasItemRegistry.class, MODID, false);
         FieldRegistrationHandler.register(BingusExtrasEnchantmentRegistry.class, MODID, false);
+        FieldRegistrationHandler.register(BingusExtrasEntityTypeRegistry.class, MODID, false);        
         
         GROUP.initialize();
 
@@ -83,7 +92,7 @@ public class BingusExtrasMod implements ModInitializer {
                 LootPool.Builder poolBuilder = LootPool.builder();
                 poolBuilder.with(ItemEntry.builder(BingusExtrasItemRegistry.ENDER_ARTIFACT));
                 poolBuilder.conditionally(KilledByPlayerLootCondition.builder());
-                poolBuilder.conditionally(RandomChanceWithLootingLootCondition.builder(0.005F, 0.01F));
+                poolBuilder.conditionally(RandomChanceWithLootingLootCondition.builder(0.01f, 0.03F));
 
                 tableBuilder.pool(poolBuilder);
             }

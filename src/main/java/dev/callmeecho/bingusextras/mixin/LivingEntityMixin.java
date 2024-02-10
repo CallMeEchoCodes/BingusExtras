@@ -6,11 +6,14 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.attribute.AttributeContainer;
+import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
+import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.Unique;
@@ -29,6 +32,9 @@ public abstract class LivingEntityMixin extends Entity {
 
     @Shadow protected abstract float getMovementSpeed(float slipperiness);
 
+    @Shadow public abstract boolean isFallFlying();
+
+    @Shadow @Final private AttributeContainer attributes;
     @Unique
     private int ticksInAir = 0;
 
@@ -45,11 +51,12 @@ public abstract class LivingEntityMixin extends Entity {
             ticksInAir++;
         }
     }
+    
     @ModifyArg(method = "applyMovementInput", at = @At(value = "INVOKE", target = "Lnet/minecraft/entity/LivingEntity;updateVelocity(FLnet/minecraft/util/math/Vec3d;)V"))
     private float applyMovementInput(float value) {
         int level = EnchantmentHelper.getLevel(BingusExtrasEnchantmentRegistry.AERODYNAMIC, this.getEquippedStack(EquipmentSlot.CHEST));
         if (level > 0 && ticksInAir > (this.hasStatusEffect(StatusEffects.SLOW_FALLING) ? 15 : 10)) {
-            return value * (this.hasStatusEffect(StatusEffects.SLOW_FALLING) ? 2f : 4f);
+            return value * (this.hasStatusEffect(StatusEffects.SLOW_FALLING) ? 1.5f : 3f);
         }
         return value;
     }
