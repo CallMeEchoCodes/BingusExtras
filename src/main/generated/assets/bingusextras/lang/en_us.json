@@ -147,7 +147,6 @@
   "block.bingusextras.yellow_wool_slab": "Yellow Wool Slab",
   "block.bingusextras.yellow_wool_stairs": "Yellow Wool Stairs",
   "enchantment.bingusextras.aerodynamic": "Aerodynamic",
-  "enchantment.bingusextras.magmatide": "Magmatide",
   "enchantment.bingusextras.reaping": "Reaping",
   "item.bingusextras.ban_hammer": "Ban Hammer",
   "item.bingusextras.cloud_in_a_bottle": "Cloud in a Bottle",
@@ -156,5 +155,6 @@
   "item.bingusextras.invisible_chestplate": "Glass Chestplate",
   "item.bingusextras.invisible_helmet": "Glass Helmet",
   "item.bingusextras.invisible_leggings": "Glass Leggings",
+  "item.bingusextras.netherite_trident": "Netherite Trident",
   "itemGroup.bingusextras.item_group": "BingusExtras"
 }

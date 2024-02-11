@@ -24,6 +24,11 @@ public class NetheriteTrident extends TridentItem {
     }
 
     @Override
+    public int getMaxUseTime(ItemStack stack) {
+        return 52000;
+    }
+
+    @Override
     public void onStoppedUsing(ItemStack stack, World world, LivingEntity user, int remainingUseTicks) {
         if (!(user instanceof PlayerEntity)) {
             return;
@@ -34,7 +39,7 @@ public class NetheriteTrident extends TridentItem {
             return;
         }
         int j = EnchantmentHelper.getRiptide(stack);
-        if (j > 0 && (!user.isInLava() || !user.isOnFire())) {
+        if (j > 0 && !(user.isInLava() || user.getFireTicks() <= 0 || user.isTouchingWaterOrRain())) {
             return;
         }
         if (!world.isClient) {
@@ -78,7 +83,7 @@ public class NetheriteTrident extends TridentItem {
         if (itemStack.getDamage() >= itemStack.getMaxDamage() - 1) {
             return TypedActionResult.fail(itemStack);
         }
-        if (EnchantmentHelper.getRiptide(itemStack) > 0 && (!user.isInLava() || !user.isOnFire())) {
+        if (EnchantmentHelper.getRiptide(itemStack) > 0 && !(user.isInLava() || user.getFireTicks() > 0 || user.isTouchingWaterOrRain())) {
             return TypedActionResult.fail(itemStack);
         }
         user.setCurrentHand(hand);
