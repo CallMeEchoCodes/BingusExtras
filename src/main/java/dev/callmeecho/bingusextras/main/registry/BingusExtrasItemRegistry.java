@@ -5,15 +5,20 @@ import dev.callmeecho.bingusextras.main.item.BanHammer;
 import dev.callmeecho.bingusextras.main.item.InvisibleMaterial;
 import dev.callmeecho.bingusextras.main.item.NetheriteTrident;
 import dev.callmeecho.bingusextras.main.item.trinket.CloudInABottle;
+import dev.callmeecho.bingusextras.main.item.trinket.EffectTrinket;
 import dev.callmeecho.bingusextras.main.item.trinket.EnderArtifact;
 import io.wispforest.owo.itemgroup.OwoItemSettings;
 import io.wispforest.owo.registration.reflect.ItemRegistryContainer;
-import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.*;
 
 @SuppressWarnings("unused")
 public class BingusExtrasItemRegistry implements ItemRegistryContainer {
     public static final CloudInABottle CLOUD_IN_A_BOTTLE = new CloudInABottle(new OwoItemSettings().maxCount(1).group(BingusExtrasMod.GROUP));
+
+    public static final EffectTrinket CITY_ARTIFACT = new EffectTrinket(new OwoItemSettings().maxCount(1).group(BingusExtrasMod.GROUP), StatusEffects.HASTE);
+    public static final EffectTrinket NETHER_ARTIFACT = new EffectTrinket(new OwoItemSettings().maxCount(1).group(BingusExtrasMod.GROUP), StatusEffects.FIRE_RESISTANCE);
+    public static final EffectTrinket OCEAN_ARTIFACT = new EffectTrinket(new OwoItemSettings().maxCount(1).group(BingusExtrasMod.GROUP), StatusEffects.WATER_BREATHING);
     public static final EnderArtifact ENDER_ARTIFACT = new EnderArtifact(new OwoItemSettings().maxCount(1).group(BingusExtrasMod.GROUP));
 
     public static final ArmorMaterial InvisibleMaterial = new InvisibleMaterial();

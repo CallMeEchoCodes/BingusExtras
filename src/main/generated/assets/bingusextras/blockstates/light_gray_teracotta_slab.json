@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "bingusextras:block/light_gray_teracotta_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/light_gray_terracotta"
+    },
+    "type=top": {
+      "model": "bingusextras:block/light_gray_teracotta_slab_top"
+    }
+  }
+}

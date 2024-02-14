@@ -1,6 +1,9 @@
 {
   "replaces": "false",
   "values": [
-    "bingusextras:ender_artifact"
+    "bingusextras:ender_artifact",
+    "bingusextras:ocean_artifact",
+    "bingusextras:nether_artifact",
+    "bingusextras:city_artifact"
   ]
 }

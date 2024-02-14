@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "bingusextras:block/shroomlight_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/shroomlight"
+    },
+    "type=top": {
+      "model": "bingusextras:block/shroomlight_slab_top"
+    }
+  }
+}

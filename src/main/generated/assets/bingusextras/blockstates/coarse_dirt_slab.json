@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "bingusextras:block/coarse_dirt_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/coarse_dirt"
+    },
+    "type=top": {
+      "model": "bingusextras:block/coarse_dirt_slab_top"
+    }
+  }
+}

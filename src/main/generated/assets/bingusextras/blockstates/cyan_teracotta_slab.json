@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "bingusextras:block/cyan_teracotta_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/cyan_terracotta"
+    },
+    "type=top": {
+      "model": "bingusextras:block/cyan_teracotta_slab_top"
+    }
+  }
+}

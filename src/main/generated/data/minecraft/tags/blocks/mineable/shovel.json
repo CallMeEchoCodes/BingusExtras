@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "bingusextras:snow_stairs",
+    "bingusextras:soul_sand_stairs",
+    "bingusextras:soul_soil_stairs",
+    "bingusextras:mud_stairs",
+    "bingusextras:coarse_dirt_stairs",
+    "bingusextras:dirt_stairs",
+    "bingusextras:snow_slab",
+    "bingusextras:soul_sand_slab",
+    "bingusextras:soul_soil_slab",
+    "bingusextras:mud_slab",
+    "bingusextras:coarse_dirt_slab",
+    "bingusextras:dirt_slab"
+  ]
+}

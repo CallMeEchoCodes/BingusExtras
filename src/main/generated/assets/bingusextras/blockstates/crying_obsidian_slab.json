@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "bingusextras:block/crying_obsidian_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/crying_obsidian"
+    },
+    "type=top": {
+      "model": "bingusextras:block/crying_obsidian_slab_top"
+    }
+  }
+}

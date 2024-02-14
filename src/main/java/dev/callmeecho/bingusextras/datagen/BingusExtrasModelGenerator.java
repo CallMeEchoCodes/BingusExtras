@@ -9,8 +9,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.*;
 import net.minecraft.util.Identifier;
 
-import static net.minecraft.data.client.BlockStateModelGenerator.createSlabBlockState;
-import static net.minecraft.data.client.BlockStateModelGenerator.createStairsBlockState;
+import static net.minecraft.data.client.BlockStateModelGenerator.*;
 
 @SuppressWarnings("UnstableApiUsage")
 public class BingusExtrasModelGenerator extends FabricModelProvider {

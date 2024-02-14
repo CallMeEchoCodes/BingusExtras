@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "bingusextras:block/snow_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/snow_block"
+    },
+    "type=top": {
+      "model": "bingusextras:block/snow_slab_top"
+    }
+  }
+}
