@@ -1,6 +1,8 @@
 package dev.callmeecho.bingusextras.main.registry;
 
 import dev.callmeecho.bingusextras.main.entity.projectile.NetheriteTridentEntity;
+import dev.callmeecho.bingusextras.main.entity.projectile.TwilightChakramEntity;
+import dev.callmeecho.bingusextras.main.item.TwilightChakram;
 import io.wispforest.owo.registration.reflect.AutoRegistryContainer;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.fabricmc.fabric.impl.object.builder.FabricEntityType;
@@ -11,9 +13,11 @@ import net.minecraft.entity.projectile.TridentEntity;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 
+@SuppressWarnings("unused")
 public class BingusExtrasEntityTypeRegistry implements AutoRegistryContainer<EntityType<?>> {
     public static final EntityType<NetheriteTridentEntity> NETHERITE_TRIDENT = FabricEntityTypeBuilder.create(SpawnGroup.MISC, (EntityType.EntityFactory<NetheriteTridentEntity>)NetheriteTridentEntity::new).dimensions(EntityDimensions.changing(0.5f, 0.5f)).trackRangeBlocks(4).trackedUpdateRate(20).build();
-
+    public static final EntityType<TwilightChakramEntity> TWILIGHT_CHAKRAM = FabricEntityTypeBuilder.create(SpawnGroup.MISC, (EntityType.EntityFactory<TwilightChakramEntity>)TwilightChakramEntity::new).dimensions(EntityDimensions.changing(0.5f, 0.5f)).trackRangeBlocks(4).trackedUpdateRate(20).build();
+    
     @Override
     public Registry<EntityType<?>> getRegistry() {
             return Registries.ENTITY_TYPE;

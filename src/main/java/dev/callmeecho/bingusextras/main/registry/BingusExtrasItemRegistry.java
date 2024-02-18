@@ -4,6 +4,7 @@ import dev.callmeecho.bingusextras.main.BingusExtrasMod;
 import dev.callmeecho.bingusextras.main.item.BanHammer;
 import dev.callmeecho.bingusextras.main.item.InvisibleMaterial;
 import dev.callmeecho.bingusextras.main.item.NetheriteTrident;
+import dev.callmeecho.bingusextras.main.item.TwilightChakram;
 import dev.callmeecho.bingusextras.main.item.trinket.CloudInABottle;
 import dev.callmeecho.bingusextras.main.item.trinket.EffectTrinket;
 import dev.callmeecho.bingusextras.main.item.trinket.EnderArtifact;
@@ -30,4 +31,5 @@ public class BingusExtrasItemRegistry implements ItemRegistryContainer {
 
     public static final Item BAN_HAMMER = new BanHammer(ToolMaterials.NETHERITE, 7.0f, -3.0f, new OwoItemSettings().maxCount(1).fireproof().group(BingusExtrasMod.GROUP).maxDamage(9999));
     public static final Item NETHERITE_TRIDENT = new NetheriteTrident(new OwoItemSettings().maxCount(1).fireproof().group(BingusExtrasMod.GROUP).maxDamage(500));
+    public static final Item TWILIGHT_CHAKRAM = new TwilightChakram(new OwoItemSettings().maxCount(1).fireproof().group(BingusExtrasMod.GROUP).maxDamage(500));
 }

@@ -6,6 +6,7 @@
   "item.bingusextras.ender_artifact": "Artifact of The End",
   "item.bingusextras.ocean_artifact": "Artifact of The Ocean",
   "item.bingusextras.city_artifact": "Artifact of The City",
+  "item.bingusextras.twilight_chakram": "Twilight Chakram",
   "block.bingusextras.what": "???",
   "item.bingusextras.invisible_helmet": "Glass Helmet",
   "item.bingusextras.invisible_chestplate": "Glass Chestplate",
@@ -16,6 +17,10 @@
   "item.bingusextras.netherite_trident": "Netherite Trident",
   "enchantment.bingusextras.aerodynamic": "Aerodynamic",
   "enchantment.bingusextras.reaping": "Reaping",
+  "enchantment.bingusextras.homing": "Homing",
+  "entity.bingusextras.twilight_chakram": "Twilight Chakram",
+  "entity.bingusextras.netherite_trident": "Netherite Trident",
+
 
   "advancements.nether.swaggiest_stairs_ever.title": "Swaggiest Stairs Ever",
   "advancements.nether.swaggiest_stairs_ever.description": "Make netherite stairs"

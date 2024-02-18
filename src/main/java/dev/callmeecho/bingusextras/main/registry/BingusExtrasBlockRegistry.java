@@ -266,6 +266,15 @@ public class BingusExtrasBlockRegistry implements BlockRegistryContainer {
     public static final StairBlockWithBase SHROOMLIGHT_STAIRS = new StairBlockWithBase(Blocks.SHROOMLIGHT, "shroomlight", BingusExtrasMod.ToolType.PICKAXE);
     public static final SlabBlockWithBase SHROOMLIGHT_SLAB = new SlabBlockWithBase(Blocks.SHROOMLIGHT, "shroomlight", BingusExtrasMod.ToolType.PICKAXE);
     
+    public static final StairBlockWithBase VERDANT_FROGLIGHT_STAIRS = new StairBlockWithBase(Blocks.VERDANT_FROGLIGHT, "verdant_froglight_side", "verdant_froglight_top", BingusExtrasMod.ToolType.PICKAXE);
+    public static final SlabBlockWithBase VERDANT_FROGLIGHT_SLAB = new SlabBlockWithBase(Blocks.VERDANT_FROGLIGHT, "verdant_froglight_side", "verdant_froglight_top", BingusExtrasMod.ToolType.PICKAXE);
+    
+    public static final StairBlockWithBase OCHRE_FROGLIGHT_STAIRS = new StairBlockWithBase(Blocks.OCHRE_FROGLIGHT, "ochre_froglight_side", "ochre_froglight_top", BingusExtrasMod.ToolType.PICKAXE);
+    public static final SlabBlockWithBase OCHRE_FROGLIGHT_SLAB = new SlabBlockWithBase(Blocks.OCHRE_FROGLIGHT, "ochre_froglight_side", "ochre_froglight_top", BingusExtrasMod.ToolType.PICKAXE);
+    
+    public static final StairBlockWithBase PEARLESCENT_FROGLIGHT_STAIRS = new StairBlockWithBase(Blocks.PEARLESCENT_FROGLIGHT, "pearlescent_froglight_side", "pearlescent_froglight_top", BingusExtrasMod.ToolType.PICKAXE);
+    public static final SlabBlockWithBase PEARLESCENT_FROGLIGHT_SLAB = new SlabBlockWithBase(Blocks.PEARLESCENT_FROGLIGHT, "pearlescent_froglight_side", "pearlescent_froglight_top", BingusExtrasMod.ToolType.PICKAXE);
+    
     public static final StairBlockWithBase AMETHYST_BLOCK_STAIRS = new StairBlockWithBase(Blocks.AMETHYST_BLOCK, "amethyst_block", BingusExtrasMod.ToolType.PICKAXE);
     public static final SlabBlockWithBase AMETHYST_BLOCK_SLAB = new SlabBlockWithBase(Blocks.AMETHYST_BLOCK, "amethyst_block", BingusExtrasMod.ToolType.PICKAXE);
     

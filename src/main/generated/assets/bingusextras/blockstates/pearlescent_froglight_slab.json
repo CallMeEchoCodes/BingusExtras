@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "bingusextras:block/pearlescent_froglight_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/pearlescent_froglight"
+    },
+    "type=top": {
+      "model": "bingusextras:block/pearlescent_froglight_slab_top"
+    }
+  }
+}

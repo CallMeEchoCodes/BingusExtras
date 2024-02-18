@@ -28,6 +28,8 @@ import net.minecraft.loot.condition.RandomChanceWithLootingLootCondition;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.sound.SoundEvent;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -66,7 +68,10 @@ public class BingusExtrasMod implements ModInitializer {
     public static final OwoItemGroup GROUP = OwoItemGroup
             .builder(new Identifier(MODID, "item_group"), () -> Icon.of(Items.DIAMOND_HELMET))
             .build();
-
+    
+    public static final Identifier BONK_ID = new Identifier(MODID + ":bonk");
+    public static SoundEvent BONK_EVENT = SoundEvent.of(BONK_ID);
+    
     @Override
     public void onInitialize() {
         LOGGER.info("Loading BingusExtras...");
@@ -74,6 +79,8 @@ public class BingusExtrasMod implements ModInitializer {
         FieldRegistrationHandler.register(BingusExtrasItemRegistry.class, MODID, false);
         FieldRegistrationHandler.register(BingusExtrasEnchantmentRegistry.class, MODID, false);
         FieldRegistrationHandler.register(BingusExtrasEntityTypeRegistry.class, MODID, false);        
+        
+        Registry.register(Registries.SOUND_EVENT, BONK_ID, BONK_EVENT);
         
         GROUP.initialize();
 
@@ -92,7 +99,7 @@ public class BingusExtrasMod implements ModInitializer {
                 LootPool.Builder poolBuilder = LootPool.builder();
                 poolBuilder.with(ItemEntry.builder(BingusExtrasItemRegistry.ENDER_ARTIFACT));
                 poolBuilder.conditionally(KilledByPlayerLootCondition.builder());
-                poolBuilder.conditionally(RandomChanceWithLootingLootCondition.builder(0.01f, 0.03F));
+                poolBuilder.conditionally(RandomChanceWithLootingLootCondition.builder(0.001f, 0.005F));
 
                 tableBuilder.pool(poolBuilder);
             }

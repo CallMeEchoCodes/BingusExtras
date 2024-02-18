@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "N": {2
+      "item": "minecraft:netherite_ingot"
+    },
+    "S": {
+      "item": "minecraft:nether_star"
+    },
+    "L": {
+      "item": "minecraft:glowstone_dust"
+    }
+  },
+  "pattern": [
+    " GL",
+    "SN ",
+    " GL"
+  ],
+  "result": {
+    "item": "bingusextras:twilight_chakram"
+  }
+}
