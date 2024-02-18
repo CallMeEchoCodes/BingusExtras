@@ -222,6 +222,8 @@
   "block.bingusextras.yellow_teracotta_stairs": "Yellow Teracotta Stairs",
   "block.bingusextras.yellow_wool_slab": "Yellow Wool Slab",
   "block.bingusextras.yellow_wool_stairs": "Yellow Wool Stairs",
+  "death.attack.slicing": "%1$s was sliced in two",
+  "death.attack.slicing.player": "%1$s was sliced in two by %2$s",
   "enchantment.bingusextras.aerodynamic": "Aerodynamic",
   "enchantment.bingusextras.homing": "Homing",
   "enchantment.bingusextras.reaping": "Reaping",
@@ -230,7 +232,10 @@
   "item.bingusextras.ban_hammer": "Ban Hammer",
   "item.bingusextras.city_artifact": "Artifact of The City",
   "item.bingusextras.cloud_in_a_bottle": "Cloud in a Bottle",
+  "item.bingusextras.dragons_earrings": "Dragon's Earrings",
   "item.bingusextras.ender_artifact": "Artifact of The End",
+  "item.bingusextras.ender_earrings": "Ender Earrings",
+  "item.bingusextras.flaming_earrings": "Flaming Earrings",
   "item.bingusextras.invisible_boots": "Glass Boots",
   "item.bingusextras.invisible_chestplate": "Glass Chestplate",
   "item.bingusextras.invisible_helmet": "Glass Helmet",
@@ -238,6 +243,7 @@
   "item.bingusextras.nether_artifact": "Artifact of The Nether",
   "item.bingusextras.netherite_trident": "Netherite Trident",
   "item.bingusextras.ocean_artifact": "Artifact of The Ocean",
+  "item.bingusextras.ocean_earrings": "Ocean Earrings",
   "item.bingusextras.twilight_chakram": "Twilight Chakram",
   "itemGroup.bingusextras.item_group": "BingusExtras"
 }

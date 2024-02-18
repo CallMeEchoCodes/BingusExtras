@@ -19,6 +19,8 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityDimensions;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
+import net.minecraft.entity.damage.DamageSource;
+import net.minecraft.entity.damage.DamageType;
 import net.minecraft.entity.mob.EndermanEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
@@ -28,9 +30,12 @@ import net.minecraft.loot.condition.RandomChanceWithLootingLootCondition;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
+import net.minecraft.world.World;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -62,6 +67,12 @@ public class BingusExtrasMod implements ModInitializer {
 
         return settings;
     }
+
+    public static DamageSource getDamageSource(World world, RegistryKey<DamageType> key, Entity attacker) {
+        return new DamageSource(world.getRegistryManager().get(RegistryKeys.DAMAGE_TYPE).entryOf(key), attacker);
+    }
+
+    public static final RegistryKey<DamageType> SLICING_DAMAGE_TYPE = RegistryKey.of(RegistryKeys.DAMAGE_TYPE, new Identifier("bingusextras", "slicing"));
     public static final String MODID = "bingusextras";
     public static final Logger LOGGER = LogManager.getLogger(MODID);
     public static final Identifier NETHERITE_TRIDENT_RIPTIDE = new Identifier(MODID, "textures/entity/netherite_trident_riptide.png");

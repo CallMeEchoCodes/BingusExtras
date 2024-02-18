@@ -34,5 +34,10 @@ public class EnchantmentMixin {
             cir.cancel();
             cir.setReturnValue(stack.getItem() instanceof TwilightChakram || ((Enchantment) (Object) this).target.isAcceptableItem(stack.getItem()));
         }
+
+        if ((Object)this == Enchantments.LOOTING) {
+            cir.cancel();
+            cir.setReturnValue(stack.getItem() instanceof TwilightChakram || ((Enchantment) (Object) this).target.isAcceptableItem(stack.getItem()));
+        }
     }
 }

@@ -31,6 +31,9 @@ import org.spongepowered.tools.obfuscation.fg3.ObfuscationEnvironmentFG3;
 
 import java.util.Objects;
 
+import static dev.callmeecho.bingusextras.main.BingusExtrasMod.SLICING_DAMAGE_TYPE;
+import static dev.callmeecho.bingusextras.main.BingusExtrasMod.getDamageSource;
+
 public class TwilightChakramEntity extends ThrownEntity implements FlyingItemEntity {
     private ItemStack stack = ItemStack.EMPTY;
 
@@ -100,10 +103,9 @@ public class TwilightChakramEntity extends ThrownEntity implements FlyingItemEnt
             }
             Vec3d location = this.getOwner().getEyePos().subtract(this.getPos());
             this.setVelocity(location.normalize().multiply(0.2 * (this.dataTracker.get(LOYALTY) + 1)));
-//            if (returnTimer > 20) {
-//                this.setPos(location.x + 0.5, location.y + 0.5, location.z + 0.5);
-//                this.returnTimer = 0;
-//            }
+            if (this.distanceTo(this.getOwner()) <= 0.25) {
+                this.setVelocity(this.getVelocity().multiply(0.5));
+            }
             returnTimer++;
         }
         
@@ -151,29 +153,51 @@ public class TwilightChakramEntity extends ThrownEntity implements FlyingItemEnt
                             if (playerEntity.getOffHandStack().isEmpty()) {
                                 playerEntity.setStackInHand(Hand.OFF_HAND, stack);
                             } else {
-                                playerEntity.getInventory().offerOrDrop(stack);
+                                this.returnTimer = 0;
                             }
-                            this.returnTimer = 0;
+                            this.getWorld().playSound(
+                                    null,
+                                    this.getX(),
+                                    this.getY(),
+                                    this.getZ(),
+                                    SoundEvents.ENTITY_ITEM_PICKUP,
+                                    this.getSoundCategory(),
+                                    1.0f,
+                                    1.0f
+                            );
+                            
                             discard();
                             return;
                         }
-                        
+
                         if (playerEntity.getInventory().getStack(returnSlot).isEmpty()) {
                             playerEntity.getInventory().setStack(returnSlot, stack);
                         } else {
                             playerEntity.getInventory().offerOrDrop(stack);
                         }
                     }
+                    
+                    this.getWorld().playSound(
+                            null,
+                            this.getX(),
+                            this.getY(),
+                            this.getZ(),
+                            SoundEvents.ENTITY_ITEM_PICKUP,
+                            this.getSoundCategory(),
+                            1.0f,
+                            1.0f
+                    );
+
                     this.returnTimer = 0;
                     discard();
                     return;
                 }
                 if (this.dataTracker.get(RETURNING)) return;
                 this.dataTracker.set(RETURNING, true);
-                livingEntity.damage(getDamageSources().generic(), 9 + this.dataTracker.get(SHARPNESS));
                 if (this.dataTracker.get(FIRE_ASPECT) > 0) {
                     livingEntity.setOnFireFor(4 * this.dataTracker.get(FIRE_ASPECT));
                 }
+                livingEntity.damage(getDamageSource(this.getWorld(), SLICING_DAMAGE_TYPE, this.getOwner()), 9 + this.dataTracker.get(SHARPNESS));
                 this.getWorld().playSound(null, this.getX(), this.getY(), this.getZ(), SoundEvents.ENTITY_PLAYER_ATTACK_CRIT, this.getSoundCategory(), 1.0f, 1.0f);
             }
         }

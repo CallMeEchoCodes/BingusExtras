@@ -27,7 +27,7 @@ public class EnchantmentHelperMixin {
     private static boolean isAcceptableItem(EnchantmentTarget enchantmentTarget, Item item) {
         ItemStack stack = new ItemStack(item);
 
-        if (item == BingusExtrasItemRegistry.TWILIGHT_CHAKRAM) return currentEnchantment.isAcceptableItem(stack) || currentEnchantment == Enchantments.SHARPNESS || currentEnchantment == BingusExtrasEnchantmentRegistry.HOMING || currentEnchantment == Enchantments.FIRE_ASPECT || currentEnchantment == Enchantments.LOYALTY;
+        if (item == BingusExtrasItemRegistry.TWILIGHT_CHAKRAM) return currentEnchantment.isAcceptableItem(stack) || currentEnchantment == Enchantments.SHARPNESS || currentEnchantment == BingusExtrasEnchantmentRegistry.HOMING || currentEnchantment == Enchantments.FIRE_ASPECT || currentEnchantment == Enchantments.LOOTING || currentEnchantment == Enchantments.LOYALTY;
 
         return enchantmentTarget.isAcceptableItem(item);
     }
