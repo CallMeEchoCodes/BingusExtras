@@ -35,8 +35,12 @@ public class BingusExtrasItemRegistry implements ItemRegistryContainer {
     public static final Item DRAGONS_EARRINGS = new ParticleTrinket(new OwoItemSettings().maxCount(1).group(BingusExtrasMod.GROUP), ParticleTypes.DRAGON_BREATH);
     public static final Item FLAMING_EARRINGS = new ParticleTrinket(new OwoItemSettings().maxCount(1).group(BingusExtrasMod.GROUP), ParticleTypes.FLAME);
     public static final Item OCEAN_EARRINGS = new ParticleTrinket(new OwoItemSettings().maxCount(1).group(BingusExtrasMod.GROUP), ParticleTypes.DRIPPING_WATER);
+    public static final Item BUBBLE_EARRINGS = new ParticleTrinket(new OwoItemSettings().maxCount(1).group(BingusExtrasMod.GROUP), ParticleTypes.BUBBLE_COLUMN_UP);
+    public static final Item HEART_EARRINGS = new ParticleTrinket(new OwoItemSettings().maxCount(1).group(BingusExtrasMod.GROUP), ParticleTypes.HEART);
+    public static final Item SCULK_EARRINGS = new ParticleTrinket(new OwoItemSettings().maxCount(1).group(BingusExtrasMod.GROUP), ParticleTypes.SCULK_SOUL);
+    public static final Item TRADER_EARRINGS = new ParticleTrinket(new OwoItemSettings().maxCount(1).group(BingusExtrasMod.GROUP), ParticleTypes.HAPPY_VILLAGER);
 
-
+    
     public static final Item BAN_HAMMER = new BanHammer(ToolMaterials.NETHERITE, 7.0f, -3.0f, new OwoItemSettings().maxCount(1).fireproof().group(BingusExtrasMod.GROUP).maxDamage(9999));
     public static final Item NETHERITE_TRIDENT = new NetheriteTrident(new OwoItemSettings().maxCount(1).fireproof().group(BingusExtrasMod.GROUP).maxDamage(500));
     public static final Item TWILIGHT_CHAKRAM = new TwilightChakram(new OwoItemSettings().maxCount(1).fireproof().group(BingusExtrasMod.GROUP).maxDamage(500));

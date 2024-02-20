@@ -19,6 +19,8 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
 
+import javax.swing.plaf.basic.BasicOptionPaneUI;
+
 public class TwilightChakram extends Item implements Vanishable {
     private final Multimap<EntityAttribute, EntityAttributeModifier> attributeModifiers;
     
@@ -46,6 +48,7 @@ public class TwilightChakram extends Item implements Vanishable {
         if (!world.isClient) {
             ItemStack copy = stack.copy();
             copy.setCount(1);
+            copy.damage(1, user, (entity) -> entity.sendToolBreakStatus(hand));
             TwilightChakramEntity chakramEntity = new TwilightChakramEntity(BingusExtrasEntityTypeRegistry.TWILIGHT_CHAKRAM, user, world, copy, user.getInventory().getSlotWithStack(stack));
             chakramEntity.setVelocity(user, user.getPitch(), user.getYaw(), 0F, 1.5F, 0.0F);
             world.spawnEntity(chakramEntity);

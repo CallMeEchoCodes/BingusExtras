@@ -230,12 +230,14 @@
   "entity.bingusextras.netherite_trident": "Netherite Trident",
   "entity.bingusextras.twilight_chakram": "Twilight Chakram",
   "item.bingusextras.ban_hammer": "Ban Hammer",
+  "item.bingusextras.bubble_earrings": "Bubble Earrings",
   "item.bingusextras.city_artifact": "Artifact of The City",
   "item.bingusextras.cloud_in_a_bottle": "Cloud in a Bottle",
   "item.bingusextras.dragons_earrings": "Dragon's Earrings",
   "item.bingusextras.ender_artifact": "Artifact of The End",
   "item.bingusextras.ender_earrings": "Ender Earrings",
   "item.bingusextras.flaming_earrings": "Flaming Earrings",
+  "item.bingusextras.heart_earrings": "Heart Earrings",
   "item.bingusextras.invisible_boots": "Glass Boots",
   "item.bingusextras.invisible_chestplate": "Glass Chestplate",
   "item.bingusextras.invisible_helmet": "Glass Helmet",
@@ -244,6 +246,8 @@
   "item.bingusextras.netherite_trident": "Netherite Trident",
   "item.bingusextras.ocean_artifact": "Artifact of The Ocean",
   "item.bingusextras.ocean_earrings": "Ocean Earrings",
+  "item.bingusextras.sculk_earrings": "Skulk Earrings",
+  "item.bingusextras.trader_earrings": "Trader Earrings",
   "item.bingusextras.twilight_chakram": "Twilight Chakram",
   "itemGroup.bingusextras.item_group": "BingusExtras"
 }

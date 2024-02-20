@@ -1,4 +1,4 @@
-// 1.20.1	2024-02-18T16:55:42.4942465	BingusExtras/Block Loot Tables
+// 1.20.1	2024-02-20T21:37:08.737881713	BingusExtras/Block Loot Tables
 860fdecf06548bf39772dac02185f5a63ee15475 data/bingusextras/loot_tables/blocks/dark_oak_log_stairs.json
 9a3ca24530ad005cff3e907b3d12a5933ed3f2a5 data/bingusextras/loot_tables/blocks/redstone_slab.json
 2afbd86b956cd98b1963f335e2eab111c15e5196 data/bingusextras/loot_tables/blocks/red_wool_slab.json
@@ -27,8 +27,8 @@ b20e6659ac2cd68f6661c50b8a3e097ab20a837e data/bingusextras/loot_tables/blocks/br
 ad764de10045cbf2eec6c0e9ab5bf3e79c8ee361 data/bingusextras/loot_tables/blocks/light_blue_wool_slab.json
 c5ebfdf11ad364601b423a04c7f7c249a4403764 data/bingusextras/loot_tables/blocks/iron_stairs.json
 14809c98f30479bd48c0644dba52145653476bac data/bingusextras/loot_tables/blocks/black_teracotta_slab.json
-f3f931e5b92c8db36f1d147c179fc20ca4913fe6 data/bingusextras/loot_tables/blocks/stripped_mangrove_wood_slab.json
 4314911c7ebe650eed3d9cfa7fc5ae42a61e528c data/bingusextras/loot_tables/blocks/stripped_cherry_wood_stairs.json
+f3f931e5b92c8db36f1d147c179fc20ca4913fe6 data/bingusextras/loot_tables/blocks/stripped_mangrove_wood_slab.json
 02f393e8df39ce37fe34535d50e2633be9b3e335 data/bingusextras/loot_tables/blocks/green_teracotta_stairs.json
 2bbaf498297b51c38414786725d0608a3db446d6 data/bingusextras/loot_tables/blocks/copper_slab.json
 528222233db4a1eabde37031ef2f3554d784e8e4 data/bingusextras/loot_tables/blocks/blue_teracotta_stairs.json
