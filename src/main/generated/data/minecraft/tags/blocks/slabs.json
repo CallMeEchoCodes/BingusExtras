@@ -108,7 +108,10 @@
     "bingusextras:mud_slab",
     "bingusextras:coarse_dirt_slab",
     "bingusextras:dirt_slab",
+    "bingusextras:moss_slab",
     "bingusextras:netherrack_slab",
+    "bingusextras:endstone_slab",
+    "bingusextras:honeycomb_slab",
     "bingusextras:rory_slab"
   ]
 }

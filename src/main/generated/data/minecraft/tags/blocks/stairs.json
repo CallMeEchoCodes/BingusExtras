@@ -108,7 +108,10 @@
     "bingusextras:mud_stairs",
     "bingusextras:coarse_dirt_stairs",
     "bingusextras:dirt_stairs",
+    "bingusextras:moss_stairs",
     "bingusextras:netherrack_stairs",
+    "bingusextras:endstone_stairs",
+    "bingusextras:honeycomb_stairs",
     "bingusextras:rory_stairs"
   ]
 }

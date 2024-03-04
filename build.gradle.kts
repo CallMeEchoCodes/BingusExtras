@@ -49,7 +49,7 @@ dependencies {
 loom {
     runs {
         create("datagen") {
-            inherit(runConfigs["server"])
+            client()
             name("Minecraft Data")
             vmArg("-Dfabric-api.datagen")
             vmArg("-Dfabric-api.datagen.output-dir=${file("src/main/generated")}")

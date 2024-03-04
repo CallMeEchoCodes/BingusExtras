@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "bingusextras:block/honeycomb_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/honeycomb_block"
+    },
+    "type=top": {
+      "model": "bingusextras:block/honeycomb_slab_top"
+    }
+  }
+}

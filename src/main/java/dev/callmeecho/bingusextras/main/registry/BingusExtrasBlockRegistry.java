@@ -296,8 +296,17 @@ public class BingusExtrasBlockRegistry implements BlockRegistryContainer {
     public static final StairBlockWithBase DIRT_STAIRS = new StairBlockWithBase(Blocks.DIRT, "dirt", BingusExtrasMod.ToolType.SHOVEL);
     public static final SlabBlockWithBase DIRT_SLAB = new SlabBlockWithBase(Blocks.DIRT, "dirt", BingusExtrasMod.ToolType.SHOVEL);
     
+    public static final StairBlockWithBase MOSS_STAIRS = new StairBlockWithBase(Blocks.MOSS_BLOCK, "moss_block", BingusExtrasMod.ToolType.HOE);
+    public static final SlabBlockWithBase MOSS_SLAB = new SlabBlockWithBase(Blocks.MOSS_BLOCK, "moss_block", BingusExtrasMod.ToolType.HOE);
+    
     public static final StairBlockWithBase NETHERRACK_STAIRS = new StairBlockWithBase(Blocks.NETHERRACK, "netherrack", BingusExtrasMod.ToolType.PICKAXE);
     public static final SlabBlockWithBase NETHERRACK_SLAB = new SlabBlockWithBase(Blocks.NETHERRACK, "netherrack", BingusExtrasMod.ToolType.PICKAXE);
+    
+    public static final StairBlockWithBase ENDSTONE_STAIRS = new StairBlockWithBase(Blocks.END_STONE, "end_stone", BingusExtrasMod.ToolType.PICKAXE);
+    public static final SlabBlockWithBase ENDSTONE_SLAB = new SlabBlockWithBase(Blocks.END_STONE, "end_stone", BingusExtrasMod.ToolType.PICKAXE);
+    
+    public static final StairBlockWithBase HONEYCOMB_STAIRS = new StairBlockWithBase(Blocks.HONEYCOMB_BLOCK, "honeycomb_block");
+    public static final SlabBlockWithBase HONEYCOMB_SLAB = new SlabBlockWithBase(Blocks.HONEYCOMB_BLOCK, "honeycomb_block");
     
     public static final BingusExtrasBlock ENDER_PEARL_BLOCK = new EnderPearlBlock(FabricBlockSettings.create().mapColor(MapColor.DARK_AQUA).emissiveLighting(Blocks::always).luminance(state -> 5).sounds(BlockSoundGroup.BONE).requiresTool().strength(1.5F, 6.0F), BingusExtrasMod.ToolType.PICKAXE);
     public static final BingusExtrasBlock WHAT = new BingusExtrasBlock(FabricBlockSettings.create().mapColor(MapColor.BLACK).emissiveLighting(Blocks::always).sounds(BlockSoundGroup.SCULK).strength(-1.0f, 3600000.0f).dropsNothing().allowsSpawning(Blocks::never).pistonBehavior(PistonBehavior.BLOCK));
