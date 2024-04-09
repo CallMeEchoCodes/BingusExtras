@@ -30,10 +30,9 @@ public class NetheriteTrident extends TridentItem {
 
     @Override
     public void onStoppedUsing(ItemStack stack, World world, LivingEntity user, int remainingUseTicks) {
-        if (!(user instanceof PlayerEntity)) {
+        if (!(user instanceof PlayerEntity playerEntity)) {
             return;
         }
-        PlayerEntity playerEntity = (PlayerEntity)user;
         int i = this.getMaxUseTime(stack) - remainingUseTicks;
         if (i < 10) {
             return;
@@ -45,7 +44,7 @@ public class NetheriteTrident extends TridentItem {
         if (!world.isClient) {
             stack.damage(1, playerEntity, p -> p.sendToolBreakStatus(user.getActiveHand()));
             if (j == 0) {
-                NetheriteTridentEntity tridentEntity = new NetheriteTridentEntity(world, (LivingEntity)playerEntity, stack);
+                NetheriteTridentEntity tridentEntity = new NetheriteTridentEntity(world, playerEntity, stack);
                 tridentEntity.setVelocity(playerEntity, playerEntity.getPitch(), playerEntity.getYaw(), 0.0f, 2.5f + (float)j * 0.5f, 1.0f);
                 if (playerEntity.getAbilities().creativeMode) {
                     tridentEntity.pickupType = PersistentProjectileEntity.PickupPermission.CREATIVE_ONLY;
@@ -69,7 +68,6 @@ public class NetheriteTrident extends TridentItem {
             playerEntity.addVelocity(h *= n / m, k *= n / m, l *= n / m);
             playerEntity.useRiptide(20);
             if (playerEntity.isOnGround()) {
-                float o = 1.1999999f;
                 playerEntity.move(MovementType.SELF, new Vec3d(0.0, 1.1999999284744263, 0.0));
             }
             SoundEvent soundEvent = j >= 3 ? SoundEvents.ITEM_TRIDENT_RIPTIDE_3 : (j == 2 ? SoundEvents.ITEM_TRIDENT_RIPTIDE_2 : SoundEvents.ITEM_TRIDENT_RIPTIDE_1);

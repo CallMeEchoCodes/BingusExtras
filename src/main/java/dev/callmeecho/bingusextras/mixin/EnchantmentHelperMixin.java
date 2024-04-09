@@ -26,6 +26,7 @@ public class EnchantmentHelperMixin {
     @Redirect(method = "getPossibleEntries", at = @At(value = "INVOKE", target = "Lnet/minecraft/enchantment/EnchantmentTarget;isAcceptableItem(Lnet/minecraft/item/Item;)Z"))
     private static boolean isAcceptableItem(EnchantmentTarget enchantmentTarget, Item item) {
         ItemStack stack = new ItemStack(item);
+        if (enchantmentTarget == null) return false;
 
         if (item == BingusExtrasItemRegistry.TWILIGHT_CHAKRAM) return currentEnchantment.isAcceptableItem(stack) || currentEnchantment == Enchantments.SHARPNESS || currentEnchantment == BingusExtrasEnchantmentRegistry.HOMING || currentEnchantment == Enchantments.FIRE_ASPECT || currentEnchantment == Enchantments.LOOTING || currentEnchantment == Enchantments.LOYALTY;
 

@@ -1,4 +1,4 @@
-// 1.20.1	2024-03-04T11:06:06.260374546	BingusExtras/Block Loot Tables
+// 1.20.1	2024-04-07T19:35:39.95962557	BingusExtras/Block Loot Tables
 860fdecf06548bf39772dac02185f5a63ee15475 data/bingusextras/loot_tables/blocks/dark_oak_log_stairs.json
 9a3ca24530ad005cff3e907b3d12a5933ed3f2a5 data/bingusextras/loot_tables/blocks/redstone_slab.json
 2afbd86b956cd98b1963f335e2eab111c15e5196 data/bingusextras/loot_tables/blocks/red_wool_slab.json
@@ -17,8 +17,8 @@ e216a65a922faa61e107c60a77fc4208d0182b35 data/bingusextras/loot_tables/blocks/en
 1dc9a79db15f38bb866432d3d69e8259de65cc9b data/bingusextras/loot_tables/blocks/jungle_wood_stairs.json
 70f6decc2fea5b7adf628d4508c81b362c9d98eb data/bingusextras/loot_tables/blocks/lime_wool_slab.json
 f2e7fc97f9900dfcb433bedcf39226ee7d111add data/bingusextras/loot_tables/blocks/coarse_dirt_slab.json
-5e4909e832a161a336f49ee5dd27b9ee1fb4c9ad data/bingusextras/loot_tables/blocks/lime_wool_stairs.json
 a7d6927059dd19bd3c1a63a1f96a95ab84215156 data/bingusextras/loot_tables/blocks/honeycomb_stairs.json
+5e4909e832a161a336f49ee5dd27b9ee1fb4c9ad data/bingusextras/loot_tables/blocks/lime_wool_stairs.json
 b0f0b00ac7f1891be1da94c93ce9ab3fd63faaaa data/bingusextras/loot_tables/blocks/dirt_slab.json
 f128e69e9aa18ec78669ec7751cf3c9e46496b2c data/bingusextras/loot_tables/blocks/stripped_jungle_wood_slab.json
 78d18f8b2889aa27f6f7056d59d4f9e67e1a1f34 data/bingusextras/loot_tables/blocks/brown_wool_stairs.json

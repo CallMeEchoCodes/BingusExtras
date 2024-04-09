@@ -67,11 +67,4 @@ public abstract class LivingEntityMixin extends Entity {
         }
         return value;
     }
-    
-    @Inject(at = @At("HEAD"), method = "getHurtSound", cancellable = true)
-    private void getHurtSound(DamageSource source, CallbackInfoReturnable<SoundEvent> cir) {
-        if (((LivingEntity)source.getAttacker()).getMainHandStack().isOf(BingusExtrasItemRegistry.BAN_HAMMER)) {
-            cir.setReturnValue(BingusExtrasMod.BONK_EVENT);
-        }
-    }
 }
